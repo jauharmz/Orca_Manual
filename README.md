@@ -4,11 +4,11 @@
 
 ### Orca Installation
 ```
-chmod a+x orca_6_1_0_linux_x86-64_shared_openmpi416.run
+chmod a+x orca_6_1_0_linux_x86-64_shared_openmpi418.run
 ```
 excecute:
 ```
-./orca_6_1_0_linux_x86-64_shared_openmpi416.run
+./orca_6_1_0_linux_x86-64_shared_openmpi418.run
 ```
 
 ### OpenMPI Installation
@@ -22,9 +22,12 @@ mpirun --version
 ```
 
 ### Configure ORCA and OpenMPI in `~/.bashrc`
+Orca
 ```
 export PATH="/root/orca_6_1_0:$PATH"
-export OMPI_MCA_plm=isolated
+```
+OpenMPI
+```
 export OMPI_MCA_rmaps_base_oversubscribe=1
 export OMPI_MCA_btl_vader_single_copy_mechanism=none
 ```
